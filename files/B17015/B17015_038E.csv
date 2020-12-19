@@ -22541,21 +22541,6 @@ NAME,B17015_038E,state,county,year
 "Juana Díaz Municipio, Puerto Rico",355.0,72,075,2012
 "Río Grande Municipio, Puerto Rico",281.0,72,119,2012
 "Manatí Municipio, Puerto Rico",284.0,72,091,2012
-"San Sebastián Municipio, Puerto Rico",82.0,72,131,2011
-"Cataño Municipio, Puerto Rico",263.0,72,033,2011
-"Peñuelas Municipio, Puerto Rico",130.0,72,111,2011
-"Añasco Municipio, Puerto Rico",121.0,72,011,2011
-"Guánica Municipio, Puerto Rico",107.0,72,055,2011
-"Comerío Municipio, Puerto Rico",75.0,72,045,2011
-"San Germán Municipio, Puerto Rico",125.0,72,125,2011
-"Bayamón Municipio, Puerto Rico",1679.0,72,021,2011
-"Juana Díaz Municipio, Puerto Rico",310.0,72,075,2011
-"Loíza Municipio, Puerto Rico",149.0,72,087,2011
-"Río Grande Municipio, Puerto Rico",271.0,72,119,2011
-"Mayagüez Municipio, Puerto Rico",344.0,72,097,2011
-"Canóvanas Municipio, Puerto Rico",348.0,72,029,2011
-"Rincón Municipio, Puerto Rico",0.0,72,117,2011
-"Manatí Municipio, Puerto Rico",227.0,72,091,2011
 "Greene County, Georgia",158.0,13,133,2011
 "Gwinnett County, Georgia",10337.0,13,135,2011
 "Habersham County, Georgia",371.0,13,137,2011
@@ -24016,7 +24001,6 @@ NAME,B17015_038E,state,county,year
 "Pawnee County, Kansas",132.0,20,145,2011
 "Phillips County, Kansas",62.0,20,147,2011
 "Pottawatomie County, Kansas",126.0,20,149,2011
-"Las Marías Municipio, Puerto Rico",67.0,72,083,2011
 "Pratt County, Kansas",108.0,20,151,2011
 "Rawlins County, Kansas",29.0,20,153,2011
 "Reno County, Kansas",462.0,20,155,2011
@@ -25762,21 +25746,23 @@ NAME,B17015_038E,state,county,year
 "Craig County, Virginia",43.0,51,045,2011
 "Culpeper County, Virginia",469.0,51,047,2011
 "Cumberland County, Virginia",136.0,51,049,2011
-"Las Marías Municipio, Puerto Rico",62.0,72,083,2010
-"San Germán Municipio, Puerto Rico",88.0,72,125,2010
-"Comerío Municipio, Puerto Rico",46.0,72,045,2010
-"Canóvanas Municipio, Puerto Rico",304.0,72,029,2010
-"Rincón Municipio, Puerto Rico",0.0,72,117,2010
-"Guánica Municipio, Puerto Rico",116.0,72,055,2010
-"Añasco Municipio, Puerto Rico",77.0,72,011,2010
-"San Sebastián Municipio, Puerto Rico",66.0,72,131,2010
-"Cataño Municipio, Puerto Rico",214.0,72,033,2010
-"Loíza Municipio, Puerto Rico",106.0,72,087,2010
-"Juana Díaz Municipio, Puerto Rico",326.0,72,075,2010
-"Río Grande Municipio, Puerto Rico",236.0,72,119,2010
-"Bayamón Municipio, Puerto Rico",1603.0,72,021,2010
-"Peñuelas Municipio, Puerto Rico",118.0,72,111,2010
-"Mayagüez Municipio, Puerto Rico",354.0,72,097,2010
+"Las Marías Municipio, Puerto Rico",67.0,72,083,2011
+"San Sebastián Municipio, Puerto Rico",82.0,72,131,2011
+"Cataño Municipio, Puerto Rico",263.0,72,033,2011
+"Peñuelas Municipio, Puerto Rico",130.0,72,111,2011
+"Añasco Municipio, Puerto Rico",121.0,72,011,2011
+"Guánica Municipio, Puerto Rico",107.0,72,055,2011
+"Comerío Municipio, Puerto Rico",75.0,72,045,2011
+"San Germán Municipio, Puerto Rico",125.0,72,125,2011
+"Bayamón Municipio, Puerto Rico",1679.0,72,021,2011
+"Juana Díaz Municipio, Puerto Rico",310.0,72,075,2011
+"Loíza Municipio, Puerto Rico",149.0,72,087,2011
+"Río Grande Municipio, Puerto Rico",271.0,72,119,2011
+"Mayagüez Municipio, Puerto Rico",344.0,72,097,2011
+"Canóvanas Municipio, Puerto Rico",348.0,72,029,2011
+"Rincón Municipio, Puerto Rico",0.0,72,117,2011
+"Manatí Municipio, Puerto Rico",227.0,72,091,2011
+"Manatí Municipio, Puerto Rico",248.0,72,091,2010
 "Merced County, California",3656.0,06,047,2010
 "Modoc County, California",78.0,06,049,2010
 "Mono County, California",289.0,06,051,2010
@@ -28982,7 +28968,21 @@ NAME,B17015_038E,state,county,year
 "Guadalupe County, Texas",1141.0,48,187,2010
 "Hale County, Texas",196.0,48,189,2010
 "Hall County, Texas",18.0,48,191,2010
-"Manatí Municipio, Puerto Rico",248.0,72,091,2010
+"Las Marías Municipio, Puerto Rico",62.0,72,083,2010
+"San Germán Municipio, Puerto Rico",88.0,72,125,2010
+"Comerío Municipio, Puerto Rico",46.0,72,045,2010
+"Canóvanas Municipio, Puerto Rico",304.0,72,029,2010
+"Rincón Municipio, Puerto Rico",0.0,72,117,2010
+"Guánica Municipio, Puerto Rico",116.0,72,055,2010
+"Añasco Municipio, Puerto Rico",77.0,72,011,2010
+"San Sebastián Municipio, Puerto Rico",66.0,72,131,2010
+"Cataño Municipio, Puerto Rico",214.0,72,033,2010
+"Loíza Municipio, Puerto Rico",106.0,72,087,2010
+"Juana Díaz Municipio, Puerto Rico",326.0,72,075,2010
+"Río Grande Municipio, Puerto Rico",236.0,72,119,2010
+"Bayamón Municipio, Puerto Rico",1603.0,72,021,2010
+"Peñuelas Municipio, Puerto Rico",118.0,72,111,2010
+"Mayagüez Municipio, Puerto Rico",354.0,72,097,2010
 "Aleutians East Borough, Alaska",11.0,02,013,2009
 "Aleutians West Census Area, Alaska",36.0,02,016,2009
 "Anchorage Municipality, Alaska",4780.0,02,020,2009
