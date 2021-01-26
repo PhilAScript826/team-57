@@ -1,14 +1,21 @@
-from flask import Flask           # import flask
+from flask import Flask, render_template
+import os 
+import json
 
 app = Flask(__name__)             # create an app instance
 
-@app.route("/")                   # at the end point /
-def hello():                      # call method hello
-    return "Hello World!"         # which returns "hello world"
-
-@app.route("/<name>")              # at the end point /<name>
-def hello_name(name):              # call method hello_name
-    return "Hello "+ name          # which returns "hello + name
+@app.route("/")
+def home():
+    json_array = []
+    path = '../../team-57'
+    for file in os.listdir(path):
+        if file.endswith('.json'):
+            j = json.load(open(os.path.join(path,file)))['data']
+            
+            json_array.append(j)
+    
+    print(len(json_array))
+    return render_template('index.html', json_array=json_array)
     
     
 if __name__ == "__main__":        # on running python app.py  

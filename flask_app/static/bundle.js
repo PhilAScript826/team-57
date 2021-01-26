@@ -1,8 +1,14 @@
+(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+
+console.log(myJson);
+//const fs = require( 'fs' );
+
 // Create a map object
 var myMap = L.map("map", {
     center: [37.09, -95.71],
     zoom: 5
 });
+
 
 // Add a tile layer
 L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
@@ -14,12 +20,41 @@ id: "mapbox/streets-v11",
 accessToken: API_KEY
 }).addTo(myMap);
 
+myJson.forEach((element)=> {
+    const randomColor = Math.floor(Math.random()*16777215).toString(16);
+
+    for (var i = 0; i < element.length; i++) {
+        var city = element[i];
+
+        // Add images for map
+        console.log(`../images/${city['Company Name']}.png`)
+        var foodIcon = L.icon({
+            iconUrl: `../images/${city['Company Name']}.png`,
+            iconSize:     [38, 95], // size of the icon
+            shadowSize:   [50, 64], // size of the shadow
+            iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+            shadowAnchor: [4, 62],  // the same for the shadow
+            popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+        });
+        L.marker(city.lat_long, {icon: foodIcon})
+        .bindPopup("<h1> Company Name:" + city['Company Name'] + "</h1>")
+        .addTo(myMap);
+    
+        L.circle(city.lat_long, {
+            color: `${"#" + randomColor}`,
+            fillColor: `${"#" + randomColor}`,
+            fillOpacity: 0.5,
+            radius: 700
+        }).addTo(myMap);
+    }
+});
+
 // An array containing each city's name, location, and population
-var request = new XMLHttpRequest();
+/* var request = new XMLHttpRequest();
 request.open("GET", "../bk_lat-lon.json", false);
 request.send(null)
 var mydata = JSON.parse(request.responseText)['data'];
-console.log(mydata);
+console.log(mydata); */
 
 /* var cities = [{
 location: [40.7128, -74.0059],
@@ -49,7 +84,7 @@ population: "446,599"
 ]; */
 
 // Loop through the cities array and create one marker for each city, bind a popup containing its name and population add it to the map
-for (var i = 0; i < mydata.length; i++) {
+/* for (var i = 0; i < mydata.length; i++) {
     var city = mydata[i];
     L.marker(city.lat_long)
     .bindPopup("<h1> Company Name:" + city['Company Name'] + "</h1>")
@@ -62,7 +97,7 @@ for (var i = 0; i < mydata.length; i++) {
         radius: 700
     }).addTo(myMap);
 
-}
+} */
 
 
 //-----------------------------------------------------------------------
@@ -127,3 +162,6 @@ mymap.on('click', onMapClick); */
     zoomOffset: -1,
     accessToken: API_KEY
 }).addTo(mymap); */
+},{"fs":2}],2:[function(require,module,exports){
+
+},{}]},{},[1]);
